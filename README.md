@@ -1,5 +1,19 @@
 # Setting up REDspace Swapi
 
+## Docker Setup
+
+Change into the project directory and run:
+
+`docker-compose up --build`
+
+The above will build and start containers for both the `server` and `client` applications.
+
+Once they are started, open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
+
+Stop the application by typing `Ctrl+C`
+
+## Manual Setup
+
 In the project directory,
 
 ## Server
