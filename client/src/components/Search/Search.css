@@ -1,0 +1,22 @@
+.App-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f0f8ff;
+  padding: 2px 8px 16px;
+}
+.App-input input {
+  padding: 8px;
+  flex: 1;
+  border: 1px solid #c0d5e3;
+  border-radius: 5px;
+}
+.App-input button {
+  padding: 8px;
+  border: 1px solid #c0d5e3;
+  background-color: #fff;
+  color: red;
+  border-radius: 5px;
+  margin-left: 0.35rem;
+  cursor: pointer;
+}

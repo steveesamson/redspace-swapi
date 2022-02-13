@@ -1,0 +1,51 @@
+.App-detail {
+  position: relative;
+  border-collapse: collapse;
+  font-size: 80%;
+  table-layout: fixed;
+  text-align: left;
+  font-family: inherit;
+  box-shadow: 2px 2px 8px rgba(221, 221, 221, 0.5);
+  width: 80%;
+  margin: 0 auto;
+}
+.App-detail-title {
+  font-weight: 600;
+  font-size: 30px !important;
+}
+
+.App-detail td,
+.App-detail th {
+  padding: 0.5em;
+  width: auto;
+  vertical-align: middle;
+  border: 1px solid #bcc2c7;
+  color: #333;
+  font-size: 16px;
+}
+
+.App-detail td {
+  text-align: left;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+}
+
+.App-detail th {
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #cbd5de;
+  width: 150px !important;
+  vertical-align: top;
+}
+
+.App-detail td table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: left;
+  font-family: inherit;
+  width: 90%;
+  margin: 0 auto 16px;
+}

@@ -1,0 +1,21 @@
+.App-loader-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.App-loader {
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #979fa5;
+  border-radius: 8px;
+  padding: 16px;
+}
+.App-loader span,
+.App-loader em {
+  display: block;
+  color: #e40018;
+}

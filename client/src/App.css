@@ -1,0 +1,70 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: #e40018;
+  /* background-color: #f0f8ff; */
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  display: flex;
+  background-color: #e40018;
+  flex-direction: column;
+  color: white;
+  width: 250px;
+}
+.App-title {
+  padding: 16px;
+  margin: 16px 0px 0px;
+  background-color: #b3bdc6;
+  background-color: #f0f8ff;
+  color: #e40018;
+  text-align: left;
+}
+
+.App-body {
+  flex: 1;
+  padding: 16px;
+  border-radius: 12px;
+  margin: 16px 16px 16px 0px;
+  background-color: #f0f8ff;
+}
+.App-body-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  height: calc(100vh - 64px);
+}
+.App-body-header {
+  color: #79838c;
+  border-bottom: 1px solid #b3bdc6;
+  padding-bottom: 1rem;
+}
+.App-body-header small {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 8px;
+}
+.App-detail-wrapper {
+  flex: 1 1 auto;
+  padding: 0px 16px 16px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
+  margin: 0px auto;
+}
