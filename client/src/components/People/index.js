@@ -36,4 +36,5 @@ const PeopleList = ({ onDetails }) => {
     </ul>
   );
 };
+
 export default PeopleList;
