@@ -25,4 +25,6 @@ Inside the /client directory, do the following:
 
 - `yarn start`
 
+The above should start the app on port `3000`.
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
