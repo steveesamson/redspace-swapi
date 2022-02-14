@@ -20,8 +20,11 @@ const PeopleList = ({ onDetails }) => {
   }, [peeps]);
 
   useEffect(() => {
-    getPeeps();
-  }, [getPeeps]);
+    if (!peeps.data) {
+      getPeeps();
+    }
+  }, [peeps.data, getPeeps]);
+
   if (error) {
     return (
       <Error>
