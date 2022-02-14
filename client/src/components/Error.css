@@ -1,0 +1,21 @@
+.App-error-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.App-error {
+  width: 70%;
+  background-color: #f1cece;
+  border: 1px solid #f1cece;
+  border-radius: 8px;
+  padding: 16px;
+}
+.App-error p {
+  color: #c70a0a;
+  font-size: 18px;
+  line-height: 1.5;
+}

@@ -1,8 +1,13 @@
 const logAndReturn = (error, res) => {
-  console.log(error);
-  res
-    .status(500)
-    .json({ error: "There was an error while fetching your character." });
+  console.error(error);
+  if (error === "Not found") {
+    return res.status(404).json({
+      error,
+    });
+  }
+  res.status(500).json({
+    error: "There was an error while fetching your character.",
+  });
 };
 const getIdFromParams = (url) => {
   url = url.replace("https://swapi.dev/api", "");

@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 import { getPage } from "../../api";
 import Loader from "../Loader";
+import Error from "../Error";
 import "./People.css";
 
 const PeopleList = ({ onDetails }) => {
@@ -13,6 +14,7 @@ const PeopleList = ({ onDetails }) => {
     if (error) {
       setError(error);
     } else {
+      setError("");
       setPeeps(rest);
     }
   }, [peeps]);
@@ -20,7 +22,13 @@ const PeopleList = ({ onDetails }) => {
   useEffect(() => {
     getPeeps();
   }, []);
-
+  if (error) {
+    return (
+      <Error>
+        <p>{error}</p>
+      </Error>
+    );
+  }
   if (!peeps.data) {
     return <Loader text="Loading people..." size={18} />;
   }

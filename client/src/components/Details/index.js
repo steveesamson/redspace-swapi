@@ -4,6 +4,7 @@ import HomePlanet from "./HomePlanet";
 import Film from "./Film";
 import Specie from "./Spicie";
 import Loader from "../Loader";
+import Error from "../Error";
 import NoSelection from "../NoSelection";
 import "./Details.css";
 
@@ -18,6 +19,7 @@ const Details = ({ id }) => {
     if (error) {
       setError(error);
     } else {
+      setError("");
       setPerson(data);
     }
     setLoading(false);
@@ -30,6 +32,13 @@ const Details = ({ id }) => {
 
   if (loading) {
     return <Loader text={`Loading person with ID '${id}'...`} size={24} />;
+  }
+  if (error) {
+    return (
+      <Error>
+        <p>{error}</p>
+      </Error>
+    );
   }
   if (!person) {
     return <NoSelection />;
