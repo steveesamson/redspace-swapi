@@ -28,7 +28,7 @@ const Details = ({ id }) => {
     if (id) {
       getPerson();
     }
-  }, [id]);
+  }, [id, getPerson]);
 
   if (loading) {
     return <Loader text={`Loading person with ID '${id}'...`} size={24} />;

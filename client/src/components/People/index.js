@@ -21,7 +21,7 @@ const PeopleList = ({ onDetails }) => {
 
   useEffect(() => {
     getPeeps();
-  }, []);
+  }, [getPeeps]);
   if (error) {
     return (
       <Error>
